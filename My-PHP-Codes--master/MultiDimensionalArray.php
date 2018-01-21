@@ -1,23 +1,22 @@
 <?php
-/*$arr = array("Sady"=>array(0,1,2,3),"Sourav"=>array(4,5,6,7));
-echo $arr["Sady"][2];
-echo "<br>".$arr["Sourav"][2];*/
-$arr = array(0=>array(1,2,3),1=>array(4,5,6));
+$cars = array(
+				 array("Volvo",22,18),
+				 array("BMW",15,30),
+				 array("Saab",17,15),
+			);
 
-for($i=0;$i<count($arr);$i++){
-  for($j=0;$j<count($arr[$i]);$j++){
-      echo $arr[$i][$j]."<br>";
-  }
-  echo "<br>";
-}
+echo "In stock ".$cars[0][0]." Sold ".$cars[0][1]." Stock".$cars[0][2]."</br>";
+echo "In stock ".$cars[1][0]." Sold ".$cars[1][1]." Stock".$cars[1][2]."</br>";
+echo "In stock ".$cars[2][0]." Sold ".$cars[2][1]." Stock".$cars[2][2]."</br>";
 
-echo "<strong>Printing 2d array using foreach loop</strong><br>";
-//foreach Loop
-foreach ($arr as $element=>$inner_array){
-//echo $element."<br>";
-foreach ($inner_array as $item){
-    echo $item."<br>";
-}
-echo "<br>";
+
+for ($i=0; $i <3 ; $i++) { 
+	# code...
+	for ($j=0; $j <3 ; $j++) { 
+		# code...
+		echo $cars[$i][$j]." ";
+	}
+
+	echo "</br>";
 }
 ?>

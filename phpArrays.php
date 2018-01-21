@@ -2,6 +2,7 @@
 <?php
 $cars =array("SADY"=>"5","TARAN"=>"6","ABRAR"=>"7");
 echo $cars["SADY"];
+
 /*echo "I LIKE ".$cars[0]." , ".$cars[1]." , ".$cars[2]."<br>";
 
 //find the length of an array
